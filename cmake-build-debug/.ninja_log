@@ -1,0 +1,5 @@
+# ninja log v5
+3	646	1710237497341597791	CMakeFiles/MemoryManger.dir/Mmry_Mngr.cpp.o	c75d31a2071309b6
+647	793	1710237497488281758	MemoryManger	21463ee38dd28145
+2	230	1710237496927864455	CMakeFiles/MemoryManger.dir/memory_manager.cpp.o	1d32449a8e34549e
+0	55	1710238055215810681	build.ninja	df1455763156ee1e
