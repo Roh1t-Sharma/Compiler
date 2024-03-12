@@ -5,4 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(MemoryManger
         memory_manager.cpp
-        Mmry_Mngr.cpp)
+        main.cpp
+        Heap.h
+        Heap.cpp
+        MemoryBlock.cpp)

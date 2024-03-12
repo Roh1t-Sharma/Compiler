@@ -1,5 +1,9 @@
 # ninja log v5
-3	646	1710237497341597791	CMakeFiles/MemoryManger.dir/Mmry_Mngr.cpp.o	c75d31a2071309b6
-647	793	1710237497488281758	MemoryManger	21463ee38dd28145
-2	230	1710237496927864455	CMakeFiles/MemoryManger.dir/memory_manager.cpp.o	1d32449a8e34549e
-0	55	1710238055215810681	build.ninja	df1455763156ee1e
+11	705	1710240257231075969	CMakeFiles/MemoryManger.dir/Mmry_Mngr.cpp.o	3a25403ff34d0468
+705	834	1710240257360022526	MemoryManger	21463ee38dd28145
+10	249	1710240256772959252	CMakeFiles/MemoryManger.dir/memory_manager.cpp.o	c74a65396e546e
+0	55	1710241590657419775	build.ninja	df1455763156ee1e
+1	537	1710241705356239452	CMakeFiles/MemoryManger.dir/Heap.cpp.o	ba9f992ba9838e5b
+1	539	1710241705356240452	CMakeFiles/MemoryManger.dir/MemoryBlock.cpp.o	ccea5a897346e253
+0	572	1710241705394425212	CMakeFiles/MemoryManger.dir/main.cpp.o	b80f5eceac90495f
+572	698	1710241705519224216	MemoryManger	c49b19efb9893c1a
