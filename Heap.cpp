@@ -11,14 +11,13 @@
 class Heap {
 private:
     // Stores information about all memory blocks
-    // Maximum heap size for demo purposes
     size_t usedMemory = 0; // Tracks the amount of used memory
 
 public:
     void* allocate(size_t size) {
         if (usedMemory + size > MAX_HEAP_SIZE) {
-            std::cout << "Allocation failed: Not enough memory.\n";
-            return nullptr; // Allocation failure code
+            std::cout << "ALLOCATION FAILED!! : Not enough memory.\n";
+            return nullptr;
         }
 
         // Simulate memory allocation (for demo purposes, we don't use real memory allocation)
@@ -31,15 +30,16 @@ public:
     }
 
     void free(void* segmentAddress) {
-        auto it = std::find_if(blocks.begin(), blocks.end(), [segmentAddress](const MemoryBlock& block) {
-            return block.segmentAddress == segmentAddress;
+        auto it = std::find_if(blocks.begin(), blocks.end(), [segmentAddress]
+        (const MemoryBlock& block) {
+            return block.segmentAddress == segmentAddress && block.inUse;
         });
 
         if (it != blocks.end()) {
             it->inUse = false;
             std::cout << "Freed memory block at " << it->segmentAddress << ". Size: " << it->size << " bytes.\n";
         } else {
-            std::cout << "Free failed: No matching memory block found.\n";
+            std::cout << "FREE FAILED!! : No matching memory block found.\n";
         }
     }
 
@@ -47,8 +47,11 @@ public:
         std::cout << "\nMemory Usage Report:\n";
         std::cout << "Total memory reserved: " << MAX_HEAP_SIZE << " bytes\n";
         std::cout << "Total memory used: " << usedMemory << " bytes\n";
+        std::cout << "Total free memory: " << (MAX_HEAP_SIZE - usedMemory) << " bytes\n";
+
         for (const auto& block : blocks) {
-            std::cout << "Block at " << block.segmentAddress << " - Size: " << block.size << " bytes, Status: " << (block.inUse ? "In Use" : "Not In Use") << "\n";
+            std::cout << "Block at " << block.segmentAddress << " - Size: " << block.size << " bytes. Status: " <<
+            (block.inUse ? "In Use" : "Not In Use") << "\n";
         }
     }
 

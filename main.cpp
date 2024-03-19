@@ -15,6 +15,7 @@ int main() {
     heap.allocate(300);
     heap.allocate(400);
     heap.allocate(500);
+    heap.logMemoryUsage();
 
     // Free up memory for blocks 2 and 4
     heap.free(heap.blocks[1].segmentAddress); // Simulating the address
@@ -24,7 +25,7 @@ int main() {
     heap.free(heap.blocks[2].segmentAddress);
 
     // Request slightly larger memory than can be allocated for one segment
-    heap.allocate(heap.MAX_HEAP_SIZE); // This should fail
+    heap.allocate(heap.MAX_HEAP_SIZE); // This will fail the allocation
 
     // Request memory half the size from the previous point three times
     size_t requestSize = heap.MAX_HEAP_SIZE / 2 / 3;
@@ -34,6 +35,5 @@ int main() {
 
     // Log memory usage
     heap.logMemoryUsage();
-
     return 0;
 }
