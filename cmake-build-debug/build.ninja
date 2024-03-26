@@ -61,18 +61,6 @@ build CMakeFiles/MemoryManger.dir/src/Heap.cpp.o: CXX_COMPILER__MemoryManger_uns
   OBJECT_DIR = CMakeFiles/MemoryManger.dir
   OBJECT_FILE_DIR = CMakeFiles/MemoryManger.dir/src
 
-build CMakeFiles/MemoryManger.dir/src/MemoryBlock.cpp.o: CXX_COMPILER__MemoryManger_unscanned_Debug /Users/rohitsharma/CLionProjects/Compiler/src/MemoryBlock.cpp || cmake_object_order_depends_target_MemoryManger
-  DEP_FILE = CMakeFiles/MemoryManger.dir/src/MemoryBlock.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/MemoryManger.dir
-  OBJECT_FILE_DIR = CMakeFiles/MemoryManger.dir/src
-
-build CMakeFiles/MemoryManger.dir/task2.cpp.o: CXX_COMPILER__MemoryManger_unscanned_Debug /Users/rohitsharma/CLionProjects/Compiler/task2.cpp || cmake_object_order_depends_target_MemoryManger
-  DEP_FILE = CMakeFiles/MemoryManger.dir/task2.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/MemoryManger.dir
-  OBJECT_FILE_DIR = CMakeFiles/MemoryManger.dir
-
 build CMakeFiles/MemoryManger.dir/src/HashTable.cpp.o: CXX_COMPILER__MemoryManger_unscanned_Debug /Users/rohitsharma/CLionProjects/Compiler/src/HashTable.cpp || cmake_object_order_depends_target_MemoryManger
   DEP_FILE = CMakeFiles/MemoryManger.dir/src/HashTable.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
@@ -87,7 +75,7 @@ build CMakeFiles/MemoryManger.dir/src/HashTable.cpp.o: CXX_COMPILER__MemoryMange
 #############################################
 # Link the executable MemoryManger
 
-build MemoryManger: CXX_EXECUTABLE_LINKER__MemoryManger_Debug CMakeFiles/MemoryManger.dir/main.cpp.o CMakeFiles/MemoryManger.dir/src/Heap.cpp.o CMakeFiles/MemoryManger.dir/src/MemoryBlock.cpp.o CMakeFiles/MemoryManger.dir/task2.cpp.o CMakeFiles/MemoryManger.dir/src/HashTable.cpp.o
+build MemoryManger: CXX_EXECUTABLE_LINKER__MemoryManger_Debug CMakeFiles/MemoryManger.dir/main.cpp.o CMakeFiles/MemoryManger.dir/src/Heap.cpp.o CMakeFiles/MemoryManger.dir/src/HashTable.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/MemoryManger.dir
   POST_BUILD = :

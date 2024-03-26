@@ -7,8 +7,7 @@ add_executable(MemoryManger
         main.cpp
         include/Heap.h
         src/Heap.cpp
-        src/MemoryBlock.cpp
-        task2.cpp
-        include/structures.h
+#        src/MemoryBlock.cpp
+#        include/structures.h
         src/HashTable.cpp
 )

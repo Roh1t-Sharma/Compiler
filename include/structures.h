@@ -7,11 +7,17 @@
 
 #include <iostream>
 #include <utility>
+#include <memory> // For std::allocator
+
 struct HashNode {
     std::string key;
+    std::string id;
+    int count;
     HashNode* next;
 
-    explicit HashNode(std::string key) : key(std::move(key)), next(nullptr) {}
+    HashNode(std::string key, std::string id) : key(key), id(id), count(1), next(nullptr) {}
 };
+
+
 
 #endif //MEMORYMANGER_STRUCTURES_H

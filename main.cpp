@@ -2,29 +2,28 @@
 #include <vector>
 #include <algorithm>
 #include "include/Heap.h"
-#include "src/Heap.cpp"
+//#include "src/Heap.cpp"
 #include "include/HashTable.h"
 
 int main() {
 
     HashTable dictionary;
-    dictionary.insert("Apple");
-    dictionary.insert("Apple");
-    dictionary.insert("Apple");
-    dictionary.insert("Apple");
-    dictionary.insert("Apricot");
-    dictionary.insert("Banana");
+    dictionary.insert("Apple","32");
+    dictionary.insert("Apricot","20");
+    dictionary.insert("Banana", "49");
+    dictionary.insert("Mango","45");
     dictionary.insert("Mango");
-    dictionary.insert("Pineapple");
-    dictionary.insert("Peach");
-    dictionary.insert("Papaya");
+    dictionary.insert("Pineapple", "22");
+    dictionary.insert("Peach", "66");
 
     dictionary.displayTable();
     dictionary.logMemoryUsage();
+    std::cout << dictionary.get("Mango") << std::endl;
+
+
     return 0;
 }
-
-// Defines a structure for each memory block
+////uncomment for task1
 //
 //int main() {
 //    Heap heap;
