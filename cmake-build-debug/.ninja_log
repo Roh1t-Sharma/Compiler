@@ -1,16 +1,14 @@
 # ninja log v5
 11	705	1710240257231075969	CMakeFiles/MemoryManger.dir/Mmry_Mngr.cpp.o	3a25403ff34d0468
-4	451	1710833042353344684	CMakeFiles/MemoryManger.dir/Heap.cpp.o	ba9f992ba9838e5b
-482	579	1710833042481898025	MemoryManger	c49b19efb9893c1a
-10	249	1710240256772959252	CMakeFiles/MemoryManger.dir/memory_manager.cpp.o	c74a65396e546e
-0	55	1710853189780887122	build.ninja	df1455763156ee1e
-1	539	1710241705356240452	CMakeFiles/MemoryManger.dir/MemoryBlock.cpp.o	ccea5a897346e253
-4	482	1710833042383745071	CMakeFiles/MemoryManger.dir/main.cpp.o	b80f5eceac90495f
-19	718	1710883985178695474	CMakeFiles/MemoryManger.dir/main.cpp.o	b80f5eceac90495f
-19	745	1710883985206966615	CMakeFiles/MemoryManger.dir/task2.cpp.o	17c2b1e7a92f6725
-2	159	1710883993366645276	CMakeFiles/MemoryManger.dir/task2.cpp.o	17c2b1e7a92f6725
-159	193	1710883993400585353	MemoryManger	26bc861501dda221
-15	268	1711437564833682646	CMakeFiles/MemoryManger.dir/task2.cpp.o	17c2b1e7a92f6725
 15	688	1711437565255944324	CMakeFiles/MemoryManger.dir/Heap.cpp.o	ba9f992ba9838e5b
-13	740	1711437565308854536	CMakeFiles/MemoryManger.dir/main.cpp.o	b80f5eceac90495f
 740	863	1711437565432215033	MemoryManger	26bc861501dda221
+10	249	1710240256772959252	CMakeFiles/MemoryManger.dir/memory_manager.cpp.o	c74a65396e546e
+0	55	1711440348377461053	build.ninja	df1455763156ee1e
+1	539	1710241705356240452	CMakeFiles/MemoryManger.dir/MemoryBlock.cpp.o	ccea5a897346e253
+13	740	1711437565308854536	CMakeFiles/MemoryManger.dir/main.cpp.o	b80f5eceac90495f
+15	268	1711437564833682646	CMakeFiles/MemoryManger.dir/task2.cpp.o	17c2b1e7a92f6725
+3	582	1711440604404357941	CMakeFiles/MemoryManger.dir/src/Heap.cpp.o	f1c618056ce9a0ee
+3	582	1711440604404362482	CMakeFiles/MemoryManger.dir/src/MemoryBlock.cpp.o	ae0df82ae8203d57
+3	583	1711440604404366857	CMakeFiles/MemoryManger.dir/src/HashTable.cpp.o	94199b1faba77ad4
+2	610	1711440604434269973	CMakeFiles/MemoryManger.dir/main.cpp.o	b80f5eceac90495f
+610	747	1711440604570967794	MemoryManger	3698690fda11086e
