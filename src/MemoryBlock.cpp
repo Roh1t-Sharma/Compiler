@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include "MemoryBlock.h"
+#include "../include/MemoryBlock.h"
 struct MemoryBlock {
     size_t size; // Size of the block
     bool inUse; // Whether the block is in use or not

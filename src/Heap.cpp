@@ -4,8 +4,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include "Heap.h"
-#include "MemoryBlock.h"
+#include "../include/Heap.h"
+#include "../include/MemoryBlock.h"
 #include "MemoryBlock.cpp"
 
 class Heap {
@@ -51,7 +51,7 @@ public:
 
         for (const auto& block : blocks) {
             std::cout << "Block at " << block.segmentAddress << " - Size: " << block.size << " bytes. Status: " <<
-            (block.inUse ? "In Use" : "Not In Use") << "\n";
+            (block.inUse ? "Used" : "Free") << "\n";
         }
     }
 

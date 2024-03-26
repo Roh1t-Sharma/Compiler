@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include "Heap.h"
-#include "Heap.cpp"
+#include "include/Heap.h"
+#include "src/Heap.cpp"
 
 // Defines a structure for each memory block
 
