@@ -4,7 +4,6 @@ project(MemoryManger)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(MemoryManger
-        memory_manager.cpp
         main.cpp
         include/Heap.h
         src/Heap.cpp
