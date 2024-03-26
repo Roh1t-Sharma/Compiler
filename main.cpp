@@ -6,14 +6,21 @@
 #include "include/HashTable.h"
 
 int main() {
+
     HashTable dictionary;
     dictionary.insert("Apple");
-    dictionary.insert("Mango");
+    dictionary.insert("Apple");
+    dictionary.insert("Apple");
+    dictionary.insert("Apple");
     dictionary.insert("Apricot");
     dictionary.insert("Banana");
+    dictionary.insert("Mango");
+    dictionary.insert("Pineapple");
+    dictionary.insert("Peach");
+    dictionary.insert("Papaya");
 
     dictionary.displayTable();
-
+    dictionary.logMemoryUsage();
     return 0;
 }
 

@@ -15,7 +15,7 @@ private:
     static const int TABLE_SIZE = 10; // Simplified for demonstration
     HashNode** table;
 
-    int hashFunction(std::string key) {
+    static int hashFunction(const std::string& key) {
         // Simple hash function: sum of characters modulo table size
         int sum = 0;
         for (char ch : key) {
@@ -42,7 +42,7 @@ public:
         delete[] table;
     }
 
-    void insert(std::string key) {
+    void insert(const std::string& key) {
         int hashValue = hashFunction(key);
         HashNode* prev = nullptr;
         HashNode* entry = table[hashValue];
@@ -52,16 +52,12 @@ public:
             entry = entry->next;
         }
 
-        if (entry == nullptr) {
-            entry = new HashNode(key);
-            if (prev == nullptr) {
-                // Insert as first bucket
-                table[hashValue] = entry;
-            } else {
-                prev->next = entry;
-            }
+        entry = new HashNode(key);
+        if (prev == nullptr) {
+            // Insert as first bucket
+            table[hashValue] = entry;
         } else {
-            // Handle update scenario (if needed)
+            prev->next = entry;
         }
     }
 
@@ -76,6 +72,30 @@ public:
             }
             std::cout << std::endl;
         }
+    }
+
+    void logMemoryUsage() {
+        size_t totalMemory = 0;
+        size_t nodeCount = 0;
+
+        // Each HashNode memory
+        for (int i = 0; i < TABLE_SIZE; ++i) {
+            HashNode* entry = table[i];
+            while (entry != nullptr) {
+                totalMemory += sizeof(HashNode);
+                nodeCount++;
+                entry = entry->next;
+            }
+        }
+
+        // Memory used by the table array itself
+        totalMemory += TABLE_SIZE * sizeof(HashNode*);
+
+        std::cout << "\nHash Table Memory Usage Report:\n";
+        std::cout << "Total HashNodes: " << nodeCount << "\n";
+        std::cout << "Total memory used by nodes: " << totalMemory << " bytes\n";
+        std::cout << "Memory used by table array: " << TABLE_SIZE * sizeof(HashNode*) << " bytes\n";
+        std::cout << "Total memory used: " << totalMemory + (TABLE_SIZE * sizeof(HashNode*)) << " bytes\n";
     }
 };
 

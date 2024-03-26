@@ -6,11 +6,12 @@
 #define MEMORYMANGER_STRUCTURES_H
 
 #include <iostream>
+#include <utility>
 struct HashNode {
     std::string key;
     HashNode* next;
 
-    HashNode(std::string key) : key(key), next(nullptr) {}
+    explicit HashNode(std::string key) : key(std::move(key)), next(nullptr) {}
 };
 
 #endif //MEMORYMANGER_STRUCTURES_H
